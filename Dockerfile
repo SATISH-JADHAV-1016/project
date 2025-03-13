@@ -6,7 +6,7 @@ ENV DOCKER_IMAGE=tomcatimage
 ENV CONTAINER_NAME=tomcatcontainer
 
 # Copy the built WAR file from the target directory to the Tomcat webapps directory
-COPY target/*LoginWebApp.war /usr/local/tomcat/webapps/
+COPY target/*.war /usr/local/tomcat/webapps/
 
 # Expose the Tomcat port
 EXPOSE 8080
